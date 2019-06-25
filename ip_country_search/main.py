@@ -6,8 +6,8 @@ import bisect
 from urllib.parse import urlencode, quote_plus
 import itertools
 
-from constants import *
-from helpers import *
+from .constants import *
+from .helpers import *
 
 
 def update_rir_files():
