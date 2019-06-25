@@ -3,8 +3,10 @@ import csv
 import math
 from ipaddress import ip_address, IPv4Address
 import bisect
+import os
+import sys
 
-from constants import *
+from .constants import *
 
 def download_data(rir_entry):
     rir = rir_entry[0]
@@ -20,7 +22,15 @@ def size_to_cidr_mask(c):
     return int(-math.log2(c) + 32)
 
 def parse_rir_file(filename):
-    with open(filename) as f:
+    for path in sys.path:
+        try:
+            path = path + "/ip_country_search/static/csv/"
+            if os.path.isdir(path):
+                break
+        except:
+            continue
+
+    with open(path + filename) as f:
         rows = csv.reader(f, delimiter='|')
         for r in rows:
             try:
