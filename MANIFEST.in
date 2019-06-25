@@ -1,0 +1,1 @@
+include ip_country_search/static/csv/*.csv
