@@ -18,7 +18,7 @@ setup(
     name="ip_country_search",
 
     # Version number (initial):
-    version="1.0.0",
+    version="1.0.1",
 
     # Application author details:
     author="Manu Mathew",
@@ -32,9 +32,9 @@ setup(
 
     # Details
     url="https://github.com/manumathew23/ip-country-search",
-    download_url = "https://github.com/manumathew23/ip-country-search/archive/v1.0.0.tar.gz"
-
+    download_url = "https://github.com/manumathew23/ip-country-search/archive/v1.0.1.tar.gz",
     license="LICENSE.txt",
+
     description="A python utility for searching country name for ipaddress",
 
     long_description=long_description,
