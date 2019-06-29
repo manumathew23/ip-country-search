@@ -32,11 +32,13 @@ setup(
 
     # Details
     url="https://github.com/manumathew23/ip-country-search",
+    download_url = "https://github.com/manumathew23/ip-country-search/archive/v1.0.0.tar.gz"
 
-    # license="LICENSE.txt",
+    license="LICENSE.txt",
     description="A python utility for searching country name for ipaddress",
 
-    long_description_content_type='text/markdown', 
+    long_description=long_description,
+    long_description_content_type='text/markdown',
 
     # Dependent packages (distributions)
     install_requires=[
